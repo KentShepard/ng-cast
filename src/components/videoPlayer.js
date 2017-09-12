@@ -2,8 +2,8 @@ angular.module('video-player')
 
 .component('videoPlayer', {
 
-  controller: function() {
-    this.video = exampleVideoData[0];
+  bindings: {
+    video: '<'
   },
 
   templateUrl: 'src/templates/videoPlayer.html'

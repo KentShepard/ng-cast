@@ -1,16 +1,8 @@
 angular.module('video-player')
 .component('videoList', {
 
-  controller: function() {
-    this.videos = exampleVideoData;
-
-    this.addVideoListEntry = () => {
-
-    }
-
-    this.onClick = () => {
-
-    }
+  bindings: {
+    videos: '<'
   },
 
   templateUrl: 'src/templates/videoList.html'
